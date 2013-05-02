@@ -26,7 +26,6 @@
 		BD1852B71732630A006B905D /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1852B61732630A006B905D /* BaseViewController.m */; };
 		BD1852BE173267B8006B905D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1852BC173267B8006B905D /* HomeViewController.m */; };
 		BD1852BF173267B8006B905D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD1852BD173267B8006B905D /* HomeViewController.xib */; };
-		BD1852C11732691D006B905D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852C01732691D006B905D /* back.png */; };
 		BD1852CE173271A4006B905D /* service_paixu.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852C2173271A4006B905D /* service_paixu.png */; };
 		BD1852CF173271A4006B905D /* service_shaixuan.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852C3173271A4006B905D /* service_shaixuan.png */; };
 		BD1852D0173271A4006B905D /* home_middle6.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852C4173271A4006B905D /* home_middle6.png */; };
@@ -47,6 +46,7 @@
 		BD1852E7173271B7006B905D /* home_middle3.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852DF173271B7006B905D /* home_middle3.png */; };
 		BD1852E8173271B7006B905D /* home_middle4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852E0173271B7006B905D /* home_middle4.png */; };
 		BD1852E9173271B7006B905D /* home_middle5.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852E1173271B7006B905D /* home_middle5.png */; };
+		BD1852EF173273C2006B905D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852EE173273C2006B905D /* back.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,7 +81,6 @@
 		BD1852BB173267B8006B905D /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		BD1852BC173267B8006B905D /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		BD1852BD173267B8006B905D /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		BD1852C01732691D006B905D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		BD1852C2173271A4006B905D /* service_paixu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_paixu.png; sourceTree = "<group>"; };
 		BD1852C3173271A4006B905D /* service_shaixuan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = service_shaixuan.png; sourceTree = "<group>"; };
 		BD1852C4173271A4006B905D /* home_middle6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle6.png; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		BD1852DF173271B7006B905D /* home_middle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle3.png; sourceTree = "<group>"; };
 		BD1852E0173271B7006B905D /* home_middle4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle4.png; sourceTree = "<group>"; };
 		BD1852E1173271B7006B905D /* home_middle5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle5.png; sourceTree = "<group>"; };
+		BD1852EE173273C2006B905D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +186,7 @@
 				BD1852EB173271F3006B905D /* service_image */,
 				BD1852EA173271D4006B905D /* home_image */,
 				BD1852C6173271A4006B905D /* paixuxiaoguotu.png */,
-				BD1852C01732691D006B905D /* back.png */,
+				BD1852EE173273C2006B905D /* back.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -362,7 +362,6 @@
 				BD18529317326036006B905D /* Default-568h@2x.png in Resources */,
 				BD1852B21732616A006B905D /* MapViewController.xib in Resources */,
 				BD1852BF173267B8006B905D /* HomeViewController.xib in Resources */,
-				BD1852C11732691D006B905D /* back.png in Resources */,
 				BD1852CE173271A4006B905D /* service_paixu.png in Resources */,
 				BD1852CF173271A4006B905D /* service_shaixuan.png in Resources */,
 				BD1852D0173271A4006B905D /* home_middle6.png in Resources */,
@@ -383,6 +382,7 @@
 				BD1852E7173271B7006B905D /* home_middle3.png in Resources */,
 				BD1852E8173271B7006B905D /* home_middle4.png in Resources */,
 				BD1852E9173271B7006B905D /* home_middle5.png in Resources */,
+				BD1852EF173273C2006B905D /* back.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +514,7 @@
 				BD18529817326036006B905D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -50,11 +50,38 @@
     UIBarButtonItem *rightButton = [[UIBarButtonItem alloc]initWithCustomView:tempButton1];
     tempViewController.navigationItem.rightBarButtonItem=rightButton;
     [rightButton release];
+    
     //显示导航栏。
     [UIView animateWithDuration:0.4 animations:^{
         tempViewController.navigationController.navigationBarHidden = NO;
+        //导航栏的背景颜色。
         tempViewController.navigationController.navigationBar.tintColor = [UIColor blackColor];
         tempViewController.navigationItem.title=centerName;
+        
+        //下面这几句很好用，是改变导航栏的背景颜色的。。。
+//        UINavigationBar *navBar = self.navigationController.navigationBar;
+//        
+//#define kSCNavBarImageTag 10
+//        if ([navBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)])
+//        {
+//            //if iOS 5.0 and later
+//            [navBar setBackgroundImage:[UIImage imageNamed:@"home_ad.png"] forBarMetrics:UIBarMetricsDefault];
+//        }
+//        else
+//        {
+//            UIImageView *imageView = (UIImageView *)[navBar viewWithTag:kSCNavBarImageTag];
+//            if (imageView == nil)
+//            {
+//                imageView = [[UIImageView alloc] initWithImage:
+//                             [UIImage imageNamed:@"home_ad.png"]];
+//                [imageView setTag:kSCNavBarImageTag];
+//                [navBar insertSubview:imageView atIndex:0];
+//                [imageView release];
+//            }  
+//        }
+        
+        
+        
     }];
 }
 -(void)backAction:(id)sender{
