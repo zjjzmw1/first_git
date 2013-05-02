@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the 'booking' target in the 'booking' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#import "ViewControllerFactory.h" //适配iphone5的时候用的。
+//下面三个是网络请求的时候用的。
+
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+#define StateBarHeight 20
+#define MainHeight (ScreenHeight - StateBarHeight)
+#define MainWidth ScreenWidth
+#define isIPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#endif
