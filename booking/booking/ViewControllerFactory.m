@@ -8,7 +8,7 @@
 
 #import "ViewControllerFactory.h"
 #import <CommonCrypto/CommonDigest.h>
-
+#import "MCSegmentedControl.h"
 @implementation ViewControllerFactory
 #pragma mark ====== 适配iphone5公用的方法 ======
 +(id)createViewControllerByControllerName:(NSString*) controllerName {
@@ -187,6 +187,25 @@ static ViewControllerFactory *classA = nil;//静态的该类的实例
         return myDateString;
     }
 
+}
+//共8个参数。
++(void)creatMySegment:(UIViewController *)viewController contentArray:(NSArray *)contentArray frame:(CGRect)frame selectedIndex:(int)selectedIndex selectedBgColor:(UIColor *)selectedBgColor unSelectedBgColor:(UIColor *)unSelectedBgColor selectedTextColor:(UIColor *)selectedTextColor unSelectedTextColor:(UIColor *)unSelectedTextColor{
+    
+	MCSegmentedControl *segmentedControl = [[MCSegmentedControl alloc] initWithItems:contentArray];
+	segmentedControl.frame = frame;
+	segmentedControl.selectedSegmentIndex = selectedIndex;
+    
+	segmentedControl.tintColor = selectedBgColor;//选中按钮的背景颜色。
+    segmentedControl.unSelectedItemBackgroundGradientColors = [NSArray arrayWithObjects:
+                                                               unSelectedBgColor,
+                                                               unSelectedBgColor,
+                                                               nil];//没有选中按钮的背景颜色。
+    
+    segmentedControl.selectedItemColor   = selectedTextColor;//选中按钮文字的颜色。
+	segmentedControl.unselectedItemColor = unSelectedTextColor;//没有选中按钮文字的颜色。
+    [segmentedControl addTarget:viewController action:@selector(segmentedControlDidChange:) forControlEvents:UIControlEventValueChanged];
+	[viewController.view addSubview:segmentedControl];
+	[segmentedControl release];
 }
 
 @end

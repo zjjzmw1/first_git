@@ -11,7 +11,7 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
-
+#import "CONSTS.h"
 #import "ViewControllerFactory.h" //适配iphone5的时候用的。
 //下面三个是网络请求的时候用的。
 

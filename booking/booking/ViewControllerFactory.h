@@ -29,4 +29,6 @@
 +(void)showMessageAlert:(NSString *)message;
 //下面是请求失败的方法。
 +(void)requestFailCode:(NSString *)code ViewController:(id)ViewController resDict:(NSDictionary *)resDict;
+//自定义单选按钮。
++(void)creatMySegment:(UIViewController *)viewController contentArray:(NSArray *)contentArray frame:(CGRect)frame selectedIndex:(int)selectedIndex selectedBgColor:(UIColor *)selectedBgColor unSelectedBgColor:(UIColor *)unSelectedBgColor selectedTextColor:(UIColor *)selectedTextColor unSelectedTextColor:(UIColor *)unSelectedTextColor;
 @end

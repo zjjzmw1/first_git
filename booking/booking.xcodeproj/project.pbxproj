@@ -58,6 +58,11 @@
 		BDC6CB691733584600E23BEF /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB671733584600E23BEF /* MoreViewController.xib */; };
 		BDC6CB6F1733690500E23BEF /* ShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB6D1733690500E23BEF /* ShopListViewController.m */; };
 		BDC6CB701733690500E23BEF /* ShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */; };
+		BDC6CB741733826000E23BEF /* ShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB731733826000E23BEF /* ShopListCell.m */; };
+		BDC6CB78173382B400E23BEF /* ShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB77173382B400E23BEF /* ShopListCell.xib */; };
+		BDC6CB7D1733865700E23BEF /* MCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB7C1733865700E23BEF /* MCSegmentedControl.m */; };
+		BDC6CB821733930100E23BEF /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB801733930100E23BEF /* ShopDetailViewController.m */; };
+		BDC6CB831733930100E23BEF /* ShopDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB811733930100E23BEF /* ShopDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +134,14 @@
 		BDC6CB6C1733690500E23BEF /* ShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListViewController.h; sourceTree = "<group>"; };
 		BDC6CB6D1733690500E23BEF /* ShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListViewController.m; sourceTree = "<group>"; };
 		BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopListViewController.xib; sourceTree = "<group>"; };
+		BDC6CB721733826000E23BEF /* ShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListCell.h; sourceTree = "<group>"; };
+		BDC6CB731733826000E23BEF /* ShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListCell.m; sourceTree = "<group>"; };
+		BDC6CB77173382B400E23BEF /* ShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopListCell.xib; sourceTree = "<group>"; };
+		BDC6CB7B1733865700E23BEF /* MCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSegmentedControl.h; sourceTree = "<group>"; };
+		BDC6CB7C1733865700E23BEF /* MCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSegmentedControl.m; sourceTree = "<group>"; };
+		BDC6CB7F1733930100E23BEF /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
+		BDC6CB801733930100E23BEF /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
+		BDC6CB811733930100E23BEF /* ShopDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,9 +291,8 @@
 		BD1852B817326758006B905D /* class */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6CB711733823100E23BEF /* cell */,
 				BDC6CB6B173368E400E23BEF /* shopList */,
-				BDC6CB641733582800E23BEF /* more */,
-				BDC6CB4F1733479700E23BEF /* personcenter */,
 				BD1852B917326763006B905D /* shouye */,
 			);
 			name = class;
@@ -289,6 +301,12 @@
 		BD1852B917326763006B905D /* shouye */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6CB50173347BE00E23BEF /* PersonCenterViewController.h */,
+				BDC6CB51173347BE00E23BEF /* PersonCenterViewController.m */,
+				BDC6CB52173347BE00E23BEF /* PersonCenterViewController.xib */,
+				BDC6CB651733584600E23BEF /* MoreViewController.h */,
+				BDC6CB661733584600E23BEF /* MoreViewController.m */,
+				BDC6CB671733584600E23BEF /* MoreViewController.xib */,
 				BD1852BB173267B8006B905D /* HomeViewController.h */,
 				BD1852BC173267B8006B905D /* HomeViewController.m */,
 				BD1852BD173267B8006B905D /* HomeViewController.xib */,
@@ -343,19 +361,10 @@
 			name = OK_image;
 			sourceTree = "<group>";
 		};
-		BDC6CB4F1733479700E23BEF /* personcenter */ = {
-			isa = PBXGroup;
-			children = (
-				BDC6CB50173347BE00E23BEF /* PersonCenterViewController.h */,
-				BDC6CB51173347BE00E23BEF /* PersonCenterViewController.m */,
-				BDC6CB52173347BE00E23BEF /* PersonCenterViewController.xib */,
-			);
-			name = personcenter;
-			sourceTree = "<group>";
-		};
 		BDC6CB55173348DA00E23BEF /* support */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6CB7A1733864500E23BEF /* segment */,
 				BDC6CB56173348EC00E23BEF /* menu */,
 			);
 			name = support;
@@ -379,24 +388,36 @@
 			name = test;
 			sourceTree = "<group>";
 		};
-		BDC6CB641733582800E23BEF /* more */ = {
-			isa = PBXGroup;
-			children = (
-				BDC6CB651733584600E23BEF /* MoreViewController.h */,
-				BDC6CB661733584600E23BEF /* MoreViewController.m */,
-				BDC6CB671733584600E23BEF /* MoreViewController.xib */,
-			);
-			name = more;
-			sourceTree = "<group>";
-		};
 		BDC6CB6B173368E400E23BEF /* shopList */ = {
 			isa = PBXGroup;
 			children = (
 				BDC6CB6C1733690500E23BEF /* ShopListViewController.h */,
 				BDC6CB6D1733690500E23BEF /* ShopListViewController.m */,
 				BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */,
+				BDC6CB7F1733930100E23BEF /* ShopDetailViewController.h */,
+				BDC6CB801733930100E23BEF /* ShopDetailViewController.m */,
+				BDC6CB811733930100E23BEF /* ShopDetailViewController.xib */,
 			);
 			name = shopList;
+			sourceTree = "<group>";
+		};
+		BDC6CB711733823100E23BEF /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB721733826000E23BEF /* ShopListCell.h */,
+				BDC6CB731733826000E23BEF /* ShopListCell.m */,
+				BDC6CB77173382B400E23BEF /* ShopListCell.xib */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		BDC6CB7A1733864500E23BEF /* segment */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB7B1733865700E23BEF /* MCSegmentedControl.h */,
+				BDC6CB7C1733865700E23BEF /* MCSegmentedControl.m */,
+			);
+			name = segment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +501,8 @@
 				BDC6CB54173347BE00E23BEF /* PersonCenterViewController.xib in Resources */,
 				BDC6CB691733584600E23BEF /* MoreViewController.xib in Resources */,
 				BDC6CB701733690500E23BEF /* ShopListViewController.xib in Resources */,
+				BDC6CB78173382B400E23BEF /* ShopListCell.xib in Resources */,
+				BDC6CB831733930100E23BEF /* ShopDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +527,9 @@
 				BDC6CB631733556700E23BEF /* LeftViewController.m in Sources */,
 				BDC6CB681733584600E23BEF /* MoreViewController.m in Sources */,
 				BDC6CB6F1733690500E23BEF /* ShopListViewController.m in Sources */,
+				BDC6CB741733826000E23BEF /* ShopListCell.m in Sources */,
+				BDC6CB7D1733865700E23BEF /* MCSegmentedControl.m in Sources */,
+				BDC6CB821733930100E23BEF /* ShopDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

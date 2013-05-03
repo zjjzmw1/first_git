@@ -8,6 +8,9 @@
 
 #import "BaseViewController.h"
 
-@interface ShopListViewController : BaseViewController
+@interface ShopListViewController : BaseViewController<UITableViewDataSource,UITableViewDelegate,UIActionSheetDelegate>
 
+
+@property (retain,nonatomic) NSMutableArray *dataArray;             //商家列表的数据。
+@property (retain,nonatomic) UITableView *myTableView;              //自定义表格。
 @end
