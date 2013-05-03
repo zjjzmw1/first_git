@@ -47,6 +47,17 @@
 		BD1852E8173271B7006B905D /* home_middle4.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852E0173271B7006B905D /* home_middle4.png */; };
 		BD1852E9173271B7006B905D /* home_middle5.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852E1173271B7006B905D /* home_middle5.png */; };
 		BD1852EF173273C2006B905D /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BD1852EE173273C2006B905D /* back.png */; };
+		BDC6CB53173347BE00E23BEF /* PersonCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB51173347BE00E23BEF /* PersonCenterViewController.m */; };
+		BDC6CB54173347BE00E23BEF /* PersonCenterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB52173347BE00E23BEF /* PersonCenterViewController.xib */; };
+		BDC6CB59173348FB00E23BEF /* DDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB58173348FB00E23BEF /* DDMenuController.m */; };
+		BDC6CB5B17334ADF00E23BEF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6CB5A17334ADF00E23BEF /* CoreLocation.framework */; };
+		BDC6CB5D17334AFE00E23BEF /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6CB5C17334AFE00E23BEF /* ImageIO.framework */; };
+		BDC6CB5F17334B0800E23BEF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDC6CB5E17334B0800E23BEF /* QuartzCore.framework */; };
+		BDC6CB631733556700E23BEF /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB621733556700E23BEF /* LeftViewController.m */; };
+		BDC6CB681733584600E23BEF /* MoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB661733584600E23BEF /* MoreViewController.m */; };
+		BDC6CB691733584600E23BEF /* MoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB671733584600E23BEF /* MoreViewController.xib */; };
+		BDC6CB6F1733690500E23BEF /* ShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDC6CB6D1733690500E23BEF /* ShopListViewController.m */; };
+		BDC6CB701733690500E23BEF /* ShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +113,22 @@
 		BD1852E0173271B7006B905D /* home_middle4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle4.png; sourceTree = "<group>"; };
 		BD1852E1173271B7006B905D /* home_middle5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_middle5.png; sourceTree = "<group>"; };
 		BD1852EE173273C2006B905D /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		BDC6CB50173347BE00E23BEF /* PersonCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonCenterViewController.h; sourceTree = "<group>"; };
+		BDC6CB51173347BE00E23BEF /* PersonCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonCenterViewController.m; sourceTree = "<group>"; };
+		BDC6CB52173347BE00E23BEF /* PersonCenterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCenterViewController.xib; sourceTree = "<group>"; };
+		BDC6CB57173348FB00E23BEF /* DDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMenuController.h; sourceTree = "<group>"; };
+		BDC6CB58173348FB00E23BEF /* DDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMenuController.m; sourceTree = "<group>"; };
+		BDC6CB5A17334ADF00E23BEF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BDC6CB5C17334AFE00E23BEF /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BDC6CB5E17334B0800E23BEF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BDC6CB611733556700E23BEF /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		BDC6CB621733556700E23BEF /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		BDC6CB651733584600E23BEF /* MoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreViewController.h; sourceTree = "<group>"; };
+		BDC6CB661733584600E23BEF /* MoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreViewController.m; sourceTree = "<group>"; };
+		BDC6CB671733584600E23BEF /* MoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreViewController.xib; sourceTree = "<group>"; };
+		BDC6CB6C1733690500E23BEF /* ShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopListViewController.h; sourceTree = "<group>"; };
+		BDC6CB6D1733690500E23BEF /* ShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopListViewController.m; sourceTree = "<group>"; };
+		BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +136,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDC6CB5F17334B0800E23BEF /* QuartzCore.framework in Frameworks */,
+				BDC6CB5D17334AFE00E23BEF /* ImageIO.framework in Frameworks */,
+				BDC6CB5B17334ADF00E23BEF /* CoreLocation.framework in Frameworks */,
 				BD1852B417326242006B905D /* MapKit.framework in Frameworks */,
 				BD18527D17326036006B905D /* UIKit.framework in Frameworks */,
 				BD18527F17326036006B905D /* Foundation.framework in Frameworks */,
@@ -139,6 +169,9 @@
 		BD18527B17326036006B905D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6CB5E17334B0800E23BEF /* QuartzCore.framework */,
+				BDC6CB5C17334AFE00E23BEF /* ImageIO.framework */,
+				BDC6CB5A17334ADF00E23BEF /* CoreLocation.framework */,
 				BD1852B317326242006B905D /* MapKit.framework */,
 				BD18527C17326036006B905D /* UIKit.framework */,
 				BD18527E17326036006B905D /* Foundation.framework */,
@@ -152,6 +185,8 @@
 			children = (
 				BD18528B17326036006B905D /* AppDelegate.h */,
 				BD18528C17326036006B905D /* AppDelegate.m */,
+				BDC6CB601733554100E23BEF /* test */,
+				BDC6CB55173348DA00E23BEF /* support */,
 				BD1852B817326758006B905D /* class */,
 				BD1852AD1732615B006B905D /* map */,
 				BD1852AC1732613C006B905D /* network */,
@@ -243,6 +278,9 @@
 		BD1852B817326758006B905D /* class */ = {
 			isa = PBXGroup;
 			children = (
+				BDC6CB6B173368E400E23BEF /* shopList */,
+				BDC6CB641733582800E23BEF /* more */,
+				BDC6CB4F1733479700E23BEF /* personcenter */,
 				BD1852B917326763006B905D /* shouye */,
 			);
 			name = class;
@@ -303,6 +341,62 @@
 				BD1852CB173271A4006B905D /* OK_yuding.png */,
 			);
 			name = OK_image;
+			sourceTree = "<group>";
+		};
+		BDC6CB4F1733479700E23BEF /* personcenter */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB50173347BE00E23BEF /* PersonCenterViewController.h */,
+				BDC6CB51173347BE00E23BEF /* PersonCenterViewController.m */,
+				BDC6CB52173347BE00E23BEF /* PersonCenterViewController.xib */,
+			);
+			name = personcenter;
+			sourceTree = "<group>";
+		};
+		BDC6CB55173348DA00E23BEF /* support */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB56173348EC00E23BEF /* menu */,
+			);
+			name = support;
+			sourceTree = "<group>";
+		};
+		BDC6CB56173348EC00E23BEF /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB57173348FB00E23BEF /* DDMenuController.h */,
+				BDC6CB58173348FB00E23BEF /* DDMenuController.m */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		BDC6CB601733554100E23BEF /* test */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB611733556700E23BEF /* LeftViewController.h */,
+				BDC6CB621733556700E23BEF /* LeftViewController.m */,
+			);
+			name = test;
+			sourceTree = "<group>";
+		};
+		BDC6CB641733582800E23BEF /* more */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB651733584600E23BEF /* MoreViewController.h */,
+				BDC6CB661733584600E23BEF /* MoreViewController.m */,
+				BDC6CB671733584600E23BEF /* MoreViewController.xib */,
+			);
+			name = more;
+			sourceTree = "<group>";
+		};
+		BDC6CB6B173368E400E23BEF /* shopList */ = {
+			isa = PBXGroup;
+			children = (
+				BDC6CB6C1733690500E23BEF /* ShopListViewController.h */,
+				BDC6CB6D1733690500E23BEF /* ShopListViewController.m */,
+				BDC6CB6E1733690500E23BEF /* ShopListViewController.xib */,
+			);
+			name = shopList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +477,9 @@
 				BD1852E8173271B7006B905D /* home_middle4.png in Resources */,
 				BD1852E9173271B7006B905D /* home_middle5.png in Resources */,
 				BD1852EF173273C2006B905D /* back.png in Resources */,
+				BDC6CB54173347BE00E23BEF /* PersonCenterViewController.xib in Resources */,
+				BDC6CB691733584600E23BEF /* MoreViewController.xib in Resources */,
+				BDC6CB701733690500E23BEF /* ShopListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +499,11 @@
 				BD1852B11732616A006B905D /* MapViewController.m in Sources */,
 				BD1852B71732630A006B905D /* BaseViewController.m in Sources */,
 				BD1852BE173267B8006B905D /* HomeViewController.m in Sources */,
+				BDC6CB53173347BE00E23BEF /* PersonCenterViewController.m in Sources */,
+				BDC6CB59173348FB00E23BEF /* DDMenuController.m in Sources */,
+				BDC6CB631733556700E23BEF /* LeftViewController.m in Sources */,
+				BDC6CB681733584600E23BEF /* MoreViewController.m in Sources */,
+				BDC6CB6F1733690500E23BEF /* ShopListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

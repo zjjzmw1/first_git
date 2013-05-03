@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class DDMenuController;
+@class HomeViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    UINavigationController *navigationController;
+}
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) DDMenuController *menuController;
+@property (strong, nonatomic) HomeViewController *homeVC;
 @end

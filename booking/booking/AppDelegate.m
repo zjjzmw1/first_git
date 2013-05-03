@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+//下面这三个是向左边半个滑动视图用的。
+#import "DDMenuController.h"
+#import "PersonCenterViewController.h"
+#import "MoreViewController.h"
 @implementation AppDelegate
 
 - (void)dealloc
@@ -20,19 +24,21 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor whiteColor]; 
     
-    HomeViewController *homeVC = [[HomeViewController alloc]initWithNibName:@"HomeViewController" bundle:nil];
-    UINavigationController *navi = [[UINavigationController alloc]initWithRootViewController:homeVC];
-    self.window.rootViewController = navi;
-    [homeVC release];
-    [navi release];
+    //把带导航栏的ViewController 用DDMenuController 封装成一个跟视图。也就是上面飘着的视图了。
+    self.homeVC =   [[[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil] autorelease];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:self.homeVC];
+    DDMenuController *rootController = [[DDMenuController alloc] initWithRootViewController:navController];
+    _menuController = rootController;
     
+    //把一个菜单视图当做跟视图的左视图。
+    PersonCenterViewController *leftController = [[PersonCenterViewController alloc] initWithNibName:@"PersonCenterViewController" bundle:nil];
+    rootController.leftViewController = leftController;
+    MoreViewController *rightVC = [[MoreViewController alloc]initWithNibName:@"MoreViewController" bundle:nil];
+    rootController.rightViewController = rightVC;
     
-    
-    
-    
-    
+    self.window.rootViewController = rootController;
     
     [self.window makeKeyAndVisible];
     return YES;
