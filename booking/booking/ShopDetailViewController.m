@@ -9,6 +9,7 @@
 #import "ShopDetailViewController.h"
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
+#import "YuDingZhongViewController.h"
 @interface ShopDetailViewController ()
 
 @end
@@ -43,6 +44,13 @@
 
 }
 
+- (IBAction)yuDingAction:(id)sender {
+    
+    YuDingZhongViewController *yuDingZhongVC = [[YuDingZhongViewController alloc]initWithNibName:@"YuDingZhongViewController" bundle:nil];
+    [self.navigationController pushViewController:yuDingZhongVC animated:YES];
+    
+    
+}
 
 
 

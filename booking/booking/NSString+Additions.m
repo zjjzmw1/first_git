@@ -17,7 +17,7 @@
                      withLineWidth:(NSInteger)lineWidth{
     CGSize size = [self sizeWithFont:font
                    constrainedToSize:CGSizeMake(lineWidth, CGFLOAT_MAX)
-                       lineBreakMode:UILineBreakModeTailTruncation];
+                       lineBreakMode:NSLineBreakByTruncatingTail];
 	NSInteger lines = size.height / [font ittLineHeight];
 	return lines;
 }
@@ -25,7 +25,7 @@
             withLineWidth:(NSInteger)lineWidth{
     CGSize size = [self sizeWithFont:font
                    constrainedToSize:CGSizeMake(lineWidth, CGFLOAT_MAX)
-                       lineBreakMode:UILineBreakModeTailTruncation];
+                       lineBreakMode:NSLineBreakByTruncatingTail];
 	return size.height;
 	
 }
